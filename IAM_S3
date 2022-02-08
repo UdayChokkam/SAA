@@ -1,0 +1,27 @@
+Identiy access management and S3
+--------------------------
+1. Identity federation (including active directory , facebook , linkedin)
+2. mfa as well 
+3. temporary access , centralised access  and shared access
+4. supports PCI DSS 
+5. key jargon  - users , groups , roles , policies
+6. IAM is global  - universal - no specific region
+7. manage password policty for users 
+8. Billing alarm can be created from the cloudwatch and then click create alarm(There are two , dont press the wrong one)
+9. you will have to create a sns topic and give email , from email subsribe to that topic
+10. SSS(S3) - simple storage service - for object based storage
+11. Files can be from 0 to 5 TB
+12. S3 is a universal namespace(because it creates a web address)
+13. sub resources - access control lists , torrent ?
+14. Read after write consistency  for PUTS of new obects, eventual consistency for overwrite PUTS and deletes
+15. 99.9  - durable , available  
+16. Tiered storage available, life cycle management , versioning , encryption , mfa delete
+17. access control lists and bucket policies
+18. s3 standard, s3-IA(infrequently accessed), s3 one zone - IA, s3-intelligent tiering 
+19. s3 glacier, s3 glacier deep dive 
+20. more storage , more requests , data transfe pricing, cross region replication, transfer acceleration (cloud front - edge locations)  - more price
+21. on s3 we cannot install operating system or databases ( This is not block based storage as hard drives)
+22. S3 is a global service
+23. public access not allowed by default 
+24. edit block access at bucket  if we want to acess from web and change at object level 
+25. 
