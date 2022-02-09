@@ -24,4 +24,43 @@ Identiy access management and S3
 22. S3 is a global service
 23. public access not allowed by default 
 24. edit block access at bucket  if we want to acess from web and change at object level 
-25. 
+25. pricing of s3 standard and intelligent tiering same but with in intelligent tiering if it gets moved to infrequently accessed then its much cheaper
+26. there will be cost for monitorig and automation of s3
+27. cheapest in this order IA, one zone IA, Glacier and deep glacier
+28. bucket policies at bucket level and access control lists at objec level
+29. access logs can be logged and stored in another bucket
+30. sse-s3(s3 managed keys),sse-kms, sse-c, encryption can be done bucket level and at indiviual object level
+31.s3 versioning can only be suspended but not disabled once enabled
+32. versioning comes with mfa delete
+33. Each and every every version has to be made public separately
+34. delete marker when deleted for an object, delete delete marker restores theobject
+35. suspend versioning not for  for future objects but previous things have to manually dealt
+36. Life cycle rule under management
+37. worm (write one and read manay ) object lock - unmodified and undeleteable
+38. governance mode , compliance mode  even root user cant delete until retention period, legal hold prevents object version being deleted it doesnt have retention period though
+39. s3 glacier valut lock same as object lock at glacier level
+40. first byte from s3 - 100-200 ms, put/copy/post/delete - 3500 and 5500 for get /head requests per prefix
+41. speading acrosses prefixes improves performance , more prefixes more performance
+42. using kms for encryption , so  limited by ths, region specific 5500, 10000, etc
+43. multi part upload if size more than 100 mb
+44. s3 byte-range fetches - if it fails only fails for those byte ranges
+45. s3 select  - only selected portion of the object - sql expression, glacier select 
+46. Root , ou , policy goes down 
+47. my organisation or aws organisations, invite/create account , invitations in aws organisations, organize accounts an dapply service control policies
+48. 3 different ways  to share buckets - bucket policies(programmatic control only), access control lists (programmatic), cross-account iam roles( p and c access)
+49. Better to have swith role link saved
+50. cross region replication - replicaton rules in management, versioning is needed in target/source bucket, it starts from when started (no previous versions), pubic explici in destination bucket
+51.  Delete markers and deleted versions will not be replicated
+52. 
+
+
+
+
+
+
+
+
+
+
+
+
