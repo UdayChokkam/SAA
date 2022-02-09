@@ -51,7 +51,35 @@ Identiy access management and S3
 49. Better to have swith role link saved
 50. cross region replication - replicaton rules in management, versioning is needed in target/source bucket, it starts from when started (no previous versions), pubic explici in destination bucket
 51.  Delete markers and deleted versions will not be replicated
-52. 
+52. cloudfront edge url - files then get uploaded to s3 bucket
+53. s3 acceleration in google for sample tool
+54. AWS datasync agent - move large data to s3, EFS, EFS to EFS
+55. cloudfront  is a cdn rather than going to same centra server - edge location 
+56. web distribution , RTMP streaming
+57. EDGE locations dont need to readonly , different from region , can be write as well 
+58. cloudfront is global service, deploy distribution , can invalidate cache but will be charged
+59. signed url for 1 file. signed cookies for multipe files
+60. oai - origin access identity 
+61. cloudfront signed urls different from s3 signed url (it will have same access as theiam  role )
+62. snowball, snowball edge (compute- lambda functions and storage) , snowmobile(exabyte-scale), snowball import and export from s3
+63. order a snowball , snowball client , gte credentials, 
+64. file gateway (NFS& smb), volume gateway as ebs snapshots, cached volumes(frequently accessed data), tape gateway 
+65.  Athena vs macie - machine learning 
+66. enable static web hosting form s3 and also bucket policy
+67. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
