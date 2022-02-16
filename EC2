@@ -1,0 +1,61 @@
+on-demand - kind of pay as go
+reserved - reserved capacity for 3 years etc  - kind of contract, pay ypfront to reduce the cost ( standard RIs- 72 % on demand, convertible RIs, scheduled Ris - option to convert other RIs)
+Reserved instances operate a regional level
+spot  - unused capacity with discount prices
+and dedicated - it only for you  - underlying hardware may not be shared -  may be used for regulatory projects - can use your licensing
+AWS pricing calculator
+1. AMI, purchasing option or spot instances , vpc, subnet , storage , tags, security group, security key pair
+yum updayte -y
+stopped vs terminated
+aws configure to configure credentials
+Roles can be assumed by users, aws architectre or other system level accounts?
+Role - who can assume it and what can be done assuming role 
+when role is assumed it is given temporary credentials and we can get the timeout for it 
+we can attach or detatch roles to ec2 instances without stopping or terminating ec2 instances?
+security groups are virtual firewalls - to let everyting in 0.0.0.0:0
+yum install httpd, start it , index file in /var/www/index.html
+ec2 metadata - curl http://169.254.169.254/latest/meta-data/
+just as a handy project you can make ec2 metadata available to web by fetching ec2 instance metadata and exposing va webserver
+ENI - elastic network interface for basic day to day networking
+enhancednetworking - uses single root i/o virtualisation (sr-iov) to provide hgh performance
+EFA - elastic fabric adapter - accelerates high performace computing and machine learning applications
+eni - 1 or more security groups,private and public ipv4 and may ipv6, mac address 
+enahnced networking - 10gbs -100 gbps (sr-IOV) - elastic network adapater(100gbs) or intel 82599 virtual function inetface(10gbps)
+elastic fabric adapter - higher throughput  , it uses  os-bypass
+placement groups - cluster, spread and partition 
+cluster - grouping of ec2 instances with  in same availability zone
+spread - placed on distinct unddelrying hardware
+partition - distinct racks, they will power and network sources
+Licensing issues with dedicated hosts - physical server
+spot instances  - statelesss, fault-tolerant and flexible applcatons
+maximum spot price so that is provisioned if its below the maximum spot price
+price keeps varying , will have 2 mins to decide if it. ges up
+spot block - 1 to 6 hrs (cant stop me )
+pricing history graph for spot instances
+spot instances cannot be used  for crtical workloads , databases etc
+spot request
+spot fleets with try to match target capacity and price restraints
+strategy - capacity optimised, diversified, lowest price and instancepoolstouseocunt
+userdata doest run when rebooted - its only when bootstrapping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
