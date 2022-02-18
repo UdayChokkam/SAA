@@ -1,0 +1,19 @@
+EBS - elastic block store
+mission critical - producton workloads , highly available and scalable
+general purpose (gp2) ssd
+gp3
+io1
+io2
+hdd
+st1- magnetic disks
+sc1 - lowest cost option(cold hdd) 
+iops - number of read and write operations per second
+throughput - number of bits read or written per second
+volume and snapshots(exist in s3 and incremental)
+consistent snapshot  - stop instance and take snap
+encryped snapshots - encrypted es
+sharing snapshots - in the region 
+EBS will always be in same AZ as EC2
+resizing ebs volumes and change vlume types on the fly
+
+
