@@ -1,0 +1,21 @@
+Aurora is always multi az unlike others
+multi-az  is for disaster recovery 
+Read replica  - read only copy of the primary database - They can be cross region as well - the are for performance not for disaster recovery
+create read replica after the actual primary database is created
+you can promote read replica to be primary
+Aurora 5 times than my sql and 3 times post gres
+10 gb , _ 10gb to 128 tb ,  2 copies across availabaility zones , 
+aurora can have 1  read replicas and post gres , my sql can have only 5 read replicas
+Automated back ups are available in aurora
+aurora serverless - not always needed
+eentually consistent reads  vs strong consistent reads
+Dynamodb accelerator (DAX) - cache is available
+Dynamodb transactions - ACID - atomic, consistent, isolated, durable
+Dynamodb backups - full back ups at any time 
+point in time recovery  - restore to any point in last 35 days
+latest restorable - 5 mins in the past 
+dynamodb streams and global tables - time ordered sequence of item level changes ina table
+global tables - multi master , multi region replication  - this is based on dynamo db strems
+
+
+
