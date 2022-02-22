@@ -15,5 +15,27 @@ encryped snapshots - encrypted es
 sharing snapshots - in the region 
 EBS will always be in same AZ as EC2
 resizing ebs volumes and change vlume types on the fly
+encryptin  is end to end - transit and rest
+snpshots of encrypted volumes are encrypted
+create a snapshot of the unencrypted  volume and then copy the sanpshot with encryption option enabled and then create image and then find in AMIs
+Based on this image launch an ec2 instance
+Ec2 hibernation - the instance boots faster - beacuse it doesnt need to reload the operating system. - cant be hibernated for more than 60 days
+EFS - can be mounted to multiple ec2 instances
+nfsv4 protocol - only for linux for now
+1000 conurrent connections , through put but expensive, content management system
+standard and infrequently accessed
+FSx for windows - windows file server - smb based file services
+FSx for lustre - AI and machine learning
+AMI - region , operating system , architecture, launch permissions   and storage for the root device(root device volume)
+Instance store volume are ephemeral, They  cannot be stopped but terminated 
+Delete on termination - ebs volume
+AWS backup with organisations
+
+
+
+
+
+
+
 
 
