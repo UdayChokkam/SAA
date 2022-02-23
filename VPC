@@ -1,0 +1,37 @@
+Every region will have a default vpc
+web(public) application(private) database(private)
+cidr.xyz - for calculating ips
+public subnets will be connected to internet gateway unlike private gateways - virtual private gateway
+default vpc - public
+1 subnet is always is 1 a vailability zone
+cidr ranges can be between 10.0.0.0/16 and 10.0.0.0/28
+vpc, route table , subnets, network acl , security groups
+AWS uses some ips inevery subnet (5 ) first 4 and last 1 
+Modify auto assign public ipv4 addresss for public subnet
+Create a internet gateway and attach to a vpc
+Everytime we create a subnet , it automatically gets connected to main route table so ensure main route table is not connected to internet
+0.0.0.0 to internet gateway
+Instance in private subnet cannot access internet , so how can we download and install software there , even for securitu patches?
+NAT (network address translation) allows egress from private subnets 
+we provide NAT gateway in public subnet
+If your destination  is to go to internet(0.0.0.0) then your target should be nat gateway
+security groups are stateful - if you send request , response traffic flows in irrespective of the restrictions
+you can block ip addrress by using network acls not by security groups
+network acl  can be attached to multiple subnets , but 1 subnet can be attached to only one network acl
+evaluated from lowest to highest
+ephermal ports?
+first come first serve 
+vpc  endpoints to communicate with other srevices in amazon. Traffic doesnt leav eamazon network
+interface endponts , gateway endpoints (s3 , dynamo db)
+vpc peering can be done across regions and accounts
+vpc c, d, e, b are connected to a but to talk b and c it cant go through A rather direct peering is needed
+overlapping cidr ranges not allowed for peering vpcs
+private link if we want vpc for 10 and 1000 of customer vpcs
+network loadbalncer on the service vpc and eni on the customer vpc for private link 
+vpn cloudhub - multiple sites vpn connections
+Direct connect  - dedicated network connection from on premise
+vpn via internet but slow but secure and encrypted
+Transit gateway  - 
+
+
+
