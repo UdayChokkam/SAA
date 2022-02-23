@@ -1,0 +1,26 @@
+DNS coverts domain names to ips
+IPV4 4 billion now - 32 bit 
+ipv6 - 128 bits- undecillion
+last - top level and second level - last but one
+IANA - internet assigned numbers authority
+domain registrars - icann-whois database
+domian.com , godaddy, hoover, aws etc
+soa record - 
+ns records - 
+ns - soa record - dns records
+a record - 
+ttl - time to leave cachced  - reduce it very less when migrating
+cname - one domain name to another domain name
+alias - naked records?
+simple routing policy - 1 record with muliple ip addesses (they are give randomly)
+weighted routing policy - each record for each weight
+health checks on individual instances
+Failover routing policy - primary and second
+Geolocation routing policy. - all europe to europe 
+Geoproximity. - based traffic 
+latency - 
+multivalue - how is it different from  failover?
+
+
+
+
